@@ -68,7 +68,7 @@ As the **Official Manager.io Partner in Jordan**, we provide authorized deployme
 
 For inquiries, consultations, or to start your deployment:
 
-- **Email:** info@majdoba.me  
+- **Email:** info@cfosolutions.me  
 - **Phone & WhatsApp:** +962 790 185 291  
 
 ### ✅ Services We Provide
