@@ -575,7 +575,7 @@
 
           <h1>Manager.io<br><span style="color:var(--accent)">Accounting System</span></h1>
 
-          <div class="hero-sub">AHMAD MAJDOBA FOR IT CONSULTING EST.</div>
+          <div class="hero-sub">AHMAD MAJDOBA</div>
 
           <p class="hero-lead">
             Deploy <b>Manager.io</b>, the global accounting powerhouse refined for precision. We bridge high-end financial architecture
@@ -689,7 +689,184 @@
         </div>
       </div>
     </section>
+<style>
+/* Import Montserrat for a tech-modern look */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+.workflow-section-dark {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    font-family: 'Montserrat', sans-serif;
+    direction: ltr; /* Converted to Left-to-Right */
+    background: #000000;
+}
+
+/* Header Styling */
+.workflow-header-dark {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.workflow-header-dark h2 {
+    font-size: clamp(30px, 6vw, 55px);
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.1;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.workflow-header-dark h2 span {
+    color: #0073BB;
+}
+
+/* Animated Underline (Back & Forth) */
+.workflow-header-dark h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: #0073BB;
+    animation: moveLineWorkflowLTR 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveLineWorkflowLTR {
+    0% { width: 15%; left: 0%; }
+    100% { width: 15%; left: 85%; }
+}
+
+.workflow-header-dark p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888888;
+    margin: 25px auto 0;
+    max-width: 800px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Workflow Grid */
+.workflow-grid-dark {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Item Card - Sharp Edges */
+.workflow-item-dark {
+    position: relative;
+    padding: 50px 30px;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 !important;
+}
+
+/* Step Number Tag */
+.workflow-step-tag-dark {
+    font-size: 12px;
+    font-weight: 900;
+    color: #0073BB;
+    background: rgba(0, 115, 187, 0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    border: 1px solid rgba(0, 115, 187, 0.2);
+}
+
+.workflow-item-dark h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.workflow-item-dark p {
+    font-size: 13.5px;
+    color: #888888;
+    line-height: 1.8;
+    transition: 0.4s;
+}
+
+/* Hover State - Dynamic Transformation */
+.workflow-item-dark:hover {
+    background: #0073BB; /* Card turns Blue */
+    border-color: #0073BB;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 115, 187, 0.3);
+}
+
+.workflow-item-dark:hover h3, 
+.workflow-item-dark:hover p { 
+    color: #ffffff; 
+}
+
+.workflow-item-dark:hover .workflow-step-tag-dark {
+    background: #ffffff;
+    color: #0073BB;
+    transform: rotate(360deg);
+}
+
+/* Responsive Scaling */
+@media (max-width: 1100px) {
+    .workflow-grid-dark { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+    .workflow-grid-dark { grid-template-columns: 1fr; }
+    .workflow-header-dark h2 { font-size: 35px; }
+}
+</style>
+
+<section class="workflow-section-dark">
+    <div class="workflow-header-dark">
+        <h2>Our <span>Methodology</span></h2>
+        <p>Guiding you with steady steps towards financial intelligence and seamless automation.</p>
+    </div>
+
+    <div class="workflow-grid-dark">
+        <div class="workflow-item-dark">
+            <div class="workflow-step-tag-dark">01</div>
+            <h3>Analysis &amp; Consulting</h3>
+            <p>Comprehensive evaluation sessions to understand your business nature, analyze accounting challenges, and identify the optimal Manager.io version for your growth.</p>
+        </div>
+
+        <div class="workflow-item-dark">
+            <div class="workflow-step-tag-dark">02</div>
+            <h3>Setup &amp; Integration</h3>
+            <p>Activating the system, building the financial structure (Chart of Accounts), and configuring tax compliance and Jordan National E-Invoicing integration.</p>
+        </div>
+
+        <div class="workflow-item-dark">
+            <div class="workflow-step-tag-dark">03</div>
+            <h3>Training &amp; Launch</h3>
+            <p>Precise migration of your historical data followed by intensive practical training for your team to ensure expert utilization of all system features from day one.</p>
+        </div>
+
+        <div class="workflow-item-dark">
+            <div class="workflow-step-tag-dark">04</div>
+            <h3>Support &amp; Evolution</h3>
+            <p>Continuous specialized technical support, periodic financial consulting, and updates ensuring your business stays aligned with the latest technical standards.</p>
+        </div>
+    </div>
+</section>
     <!-- PRICING (2 COLORS + SEPARATOR LINE + BIGGER TEXT + FULL WIDTH) -->
     <section id="pricing" class="pricing">
       <div class="container">
@@ -968,3 +1145,4 @@
 
 </body>
 </html>
+
