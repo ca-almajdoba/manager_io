@@ -866,6 +866,210 @@
             <p>Continuous specialized technical support, periodic financial consulting, and updates ensuring your business stays aligned with the latest technical standards.</p>
         </div>
     </div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* Main Section */
+.extra-services-section-dark {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    font-family: 'Montserrat', sans-serif;
+    direction: ltr;
+    background-color: #000000;
+}
+
+/* Header Styling */
+.services-header-dark {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* تعديل العنوان الرئيسي ليشمل كل الكلمات بالتدرج اللوني */
+.services-header-dark h2 {
+    font-size: clamp(30px, 6vw, 55px);
+    font-weight: 900;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    
+    /* تطبيق التدرج اللوني على النص بالكامل */
+    background: linear-gradient(90deg, #00f2fe, #4facfe, #a29bfe, #667eea, #00ff88);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 5s ease infinite;
+}
+
+/* الخط المتحرك أسفل العنوان */
+.services-header-dark h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #00f2fe, #4facfe, #a29bfe, #667eea, #00ff88);
+    background-size: 200% auto;
+    animation: moveLineSeamlessLTR 3s ease-in-out infinite alternate, gradientShift 3s linear infinite;
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientShift {
+    to { background-position: 200% center; }
+}
+
+@keyframes moveLineSeamlessLTR {
+    0% { width: 15%; left: 0%; }
+    100% { width: 25%; left: 75%; }
+}
+
+.services-header-dark p {
+    color: #888888;
+    font-size: 14px;
+    margin: 25px auto 0;
+    font-weight: 600;
+    max-width: 800px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+/* Grid Layout */
+.services-grid-dark {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Card Design */
+.service-card-dark {
+    background: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    padding: 50px 30px;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 280px;
+}
+
+/* عنوان البطاقة الملون */
+.service-card-dark h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--card-color);
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* تأثير التوهج عند التمرير */
+.service-card-dark:hover {
+    transform: translateY(-10px);
+    border-color: var(--card-color);
+    background: #111111;
+    box-shadow: 0 0 25px -5px var(--card-color);
+}
+
+.service-card-dark:hover h3 {
+    text-shadow: 0 0 15px var(--card-color);
+    transform: scale(1.05);
+}
+
+.service-card-dark p {
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.8;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.service-card-dark:hover p {
+    color: #ffffff;
+}
+
+/* الخط السفلي للبطاقة */
+.service-card-dark::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--card-color);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.service-card-dark:hover::after {
+    width: 80%;
+}
+
+/* لوحة الألوان للبطاقات */
+.card-financial { --card-color: #00d2ff; } 
+.card-jofotara  { --card-color: #00ff88; } 
+.card-config    { --card-color: #f9d423; } 
+.card-training  { --card-color: #ff4b2b; } 
+.card-chart     { --card-color: #a29bfe; } 
+.card-support   { --card-color: #4facfe; } 
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) { .services-grid-dark { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { 
+    .services-grid-dark { grid-template-columns: 1fr; }
+}
+</style>
+
+<section class="extra-services-section-dark">
+    <div class="services-header-dark">
+        <h2>Our Services</h2>
+        <p>Beyond providing Manager.io software, we empower your business growth through specialized technical and financial solutions.</p>
+    </div>
+
+    <div class="services-grid-dark">
+        <div class="service-card-dark card-financial">
+            <h3>Financial Consulting</h3>
+            <p>We provide professional accounting insights to evaluate financial entries and develop workflows compliant with international standards.</p>
+        </div>
+
+        <div class="service-card-dark card-jofotara">
+            <h3>JOFOTARA Integration</h3>
+            <p>Technical solutions to link your sales with the national E-Invoicing platform, ensuring full tax compliance and avoiding penalties.</p>
+        </div>
+
+        <div class="service-card-dark card-config">
+            <h3>Configuration &amp; Setup</h3>
+            <p>Setup and customization of system interfaces to match your specific business cycle, including advanced programming customizations.</p>
+        </div>
+
+        <div class="service-card-dark card-training">
+            <h3>Training &amp; Coaching</h3>
+            <p>Intensive training programs for your accounting team to ensure expert use of all system features from day one.</p>
+        </div>
+
+        <div class="service-card-dark card-chart">
+            <h3>Chart of Accounts</h3>
+            <p>Structuring a professional Chart of Accounts that simplifies financial reporting and enables precise cost center monitoring.</p>
+        </div>
+
+        <div class="service-card-dark card-support">
+            <h3>Technical Support</h3>
+            <p>Solving technical issues, performing updates, and ensuring your accounting system operates without any interruptions.</p>
+        </div>
+    </div>
+</section>
 </section>
     <!-- PRICING (2 COLORS + SEPARATOR LINE + BIGGER TEXT + FULL WIDTH) -->
     <section id="pricing" class="pricing">
@@ -1145,4 +1349,5 @@
 
 </body>
 </html>
+
 
