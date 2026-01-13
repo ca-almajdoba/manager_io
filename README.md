@@ -32,8 +32,6 @@ https://www.manager.io/download
 
 The **Cloud Edition** is a fully hosted Manager.io solution, perfect for businesses that need accessibility, security, and scalability.  
 
-$590.00 / first year 
-then $500.00 / per year 
 - ✔️ Access from anywhere  
 - ✔️ Secure cloud hosting with automatic backups  
 - ✔️ Unlimited users and unlimited businesses  
